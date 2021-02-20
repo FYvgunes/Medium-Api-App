@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background: #282828;
+    background: -webkit-linear-gradient(top, #282828, #01FBAA);
+    background: -moz-linear-gradient(top, #282828, #01FBAA);
+    background: linear-gradient(to bottom, #282828, #bbdfc8);
+}
+.images{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background-color: #436157;
+    opacity: 0.5;
+    margin: 0;
+    padding: 0;
+    z-index: -1;
+}
+.images h2{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+
+    font-size: 3.5rem;
+    font-weight: 900;
+    opacity: 1;
+    z-index: 100;
+    color: #fff;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+.images h2 span{
+    color: #16c79a;
+}
+.blog{
+    position: relative;
+    max-width: 900px;
+    height: 200px;
+    background-color: #969696;
+    padding: 15px 20px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+
+.blog img{
+    width: 150px;
+    height: 150px;
+}
+.blog a{
+   color: #fff;
+   font-size: 1rem;
+   padding: 10px 15px;
+   width: 150px;
+   border-radius: 15px;
+   text-align: center;
+   position: absolute;
+   right: 10px;
+   background: linear-gradient(to bottom, #147e55, #75cfb8);
+   -webkit-border-radius: 15px;
+   -moz-border-radius: 15px;
+   -ms-border-radius: 15px;
+   -o-border-radius: 15px;
+   transition: .5s all;
+   -webkit-transition: .5s all;
+   -moz-transition: .5s all;
+   -ms-transition: .5s all;
+   -o-transition: .5s all;
+   text-decoration: none;
+}
+.blog a:hover{
+    letter-spacing: 1px;
+}
+.blogs{
+    margin-left: 15px;
+}
+.blog h1{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+@media(max-width:400px){
+    .blog h1{
+        font-size: 1.7rem;
+       
+    }
+    .blog h3{
+        font-size: 1.2rem;
+        
+    }
+    .blog a{
+        padding: 5px 8px;
+        bottom: 10px;
+        font-size: 0.9rem;
+    }
+    .images h2{
+        font-size: 3rem;
+    }
+}
